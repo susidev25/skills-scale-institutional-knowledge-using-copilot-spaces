@@ -1,6 +1,6 @@
 name: "Add Content to Project Management Process Docs"
 description: "Request to add new content or updates to an existing program management process document."
-title: "[Process Doc Update]: "
+title: "[Process Doc Update]: Adding more personas and roles to the project management processes"
 labels: ["documentation", "process improvement"]
 body:
   - type: dropdown
@@ -20,6 +20,7 @@ body:
         - <new document>
     validations:
       required: true
+    default: octoacme-roles-and-personas.md
 
   - type: textarea
     id: content_summary
@@ -29,6 +30,7 @@ body:
       placeholder: "E.g., Add clarification to risk escalation paths, new checklist for releases, additional role responsibilities, etc."
     validations:
       required: true
+    default: "Identify potential new personas/roles that could be added to the project management processes documentation to enhance clarity and accountability."
 
   - type: textarea
     id: rationale
@@ -38,6 +40,7 @@ body:
       placeholder: "E.g., Identified gap in process, team feedback, alignment with industry standards, etc."
     validations:
       required: true
+    default: "Expanding the defined roles and responsibilities in the project management documentation will enhance clarity and accountability. This will ensure better alignment of tasks and improve project outcomes."
 
   - type: textarea
     id: example_content
@@ -45,6 +48,12 @@ body:
       label: "Suggested Content (optional)"
       description: "Paste the proposed new text, checklist, diagram, or example content you'd like to add. (Optional)"
       placeholder: "E.g., - New checklist items, - Copy for a new section, - Example scenario, etc."
+    default: |
+      ### Proposed Personas/Roles
+      - **Project Sponsor**: Responsible for providing overall direction and funding for the project. Interacts with the project manager to ensure alignment with organizational goals.
+      - **Quality Assurance Lead**: Ensures the project deliverables meet quality standards. Collaborates with the project team to implement quality checks.
+      - **Risk Manager**: Identifies, assesses, and mitigates risks throughout the project lifecycle. Works closely with the project manager and stakeholders.
+      - **Stakeholder Liaison**: Acts as a bridge between stakeholders and the project team, ensuring stakeholder needs are communicated and addressed.
 
   - type: checkboxes
     id: acceptance_criteria
